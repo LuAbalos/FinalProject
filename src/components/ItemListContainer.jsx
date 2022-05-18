@@ -18,22 +18,6 @@ const ItemListContainer = () => {
       setDato([]);
     })
   }, []);
-
-
-  // useEffect(() =>{
-  //   const fetchFromFirestore = async () => {
-  //     const querySnapshot = await getDocs(collection(db, "products"));
-  //     const dataFromFirestore = querySnapshot.docs.map((doc) => ({
-  //       id: doc.id,
-  //       ...doc.data()
-  //     }));
-  //     return dataFromFirestore;
-  //   }
-  //   fetchFromFirestore()
-  //     .then(result => setDato(result))
-  //     .catch(err => console.log (err));
-  // }, [dato]);
-  
   
   return (
     <>
