@@ -1,5 +1,4 @@
-import React, {useState} from "react" //6.8K (gzipped:2.7K);
-
+import React, {useState} from "react";
 
 const ItemCount = ({initial, stock, onAdd}) => {
     const [contador, setContador] = useState( initial );

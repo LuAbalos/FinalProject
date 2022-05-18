@@ -8,8 +8,6 @@ export const products = [
     img: "img/pads.jpg",
     categoryId: 16 ,
     category: "Productos suaves",
-
-  
   },
 
   {
@@ -20,8 +18,7 @@ export const products = [
     precio: "$550",
     img : "img/esponja.jpg",
     categoryId: 16 ,
-    category: "Productos suaves",
-     
+    category: "Productos suaves", 
   },
 
   {
@@ -54,8 +51,7 @@ export const products = [
     precio: "$350",
     img: "img/bolsaJaboneraExfoliante.jpg",
     categoryId: 17,
-    category:
-      "Exfoliantes",
+    category: "Exfoliantes",
   },
 
   {
@@ -68,7 +64,6 @@ export const products = [
     categoryId: 18,
     category:"Combo"
   },
-
 ];
 
 export const getData = () => {

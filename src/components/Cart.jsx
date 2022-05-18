@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CardBody, CardGroup, Card, CardImg, CardTitle,CardSubtitle, CardText, CardHeader, CardFooter, FormatNumber} from "reactstrap";
+import { CardBody, CardGroup, Card, CardImg, CardTitle,CardSubtitle, CardText, CardHeader, CardFooter} from "reactstrap";
 import { CartContext } from "./CartContext";
 import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
 import db from "../js-components/firebaseConfig";
@@ -34,9 +34,7 @@ const Cart = () => {
             total: test.calcTotal(),
             items: itemsForDB,
             date: serverTimestamp()
-          };
-
-        console.log(order);
+        };
     
         const createOrderInFirestore = async () => {
           // Add a new document with a generated id
@@ -51,11 +49,8 @@ const Cart = () => {
         return(
             test.setCartList([])
         )
-        
-      
-      }
+    }
     
-
     return (
        <>
             <CardTitle> Tu carrito</CardTitle>
@@ -98,8 +93,6 @@ const Cart = () => {
                                         <CardText>
                                         <button onClick={() => test.removeItem(item.idItem)} > Descartar un producto </button>
                                         </CardText>
-                                        
-                                        
                                     </CardBody>
                                 </Card>   
                             )   
@@ -107,10 +100,9 @@ const Cart = () => {
                     </CardGroup>
                 )
             }
-             { 
+            { 
                 test.cartList.length > 0 &&
-                <>
-                    
+                <>  
                     <Card>
                         <CardHeader tag="h3">
                             Resumen de compra

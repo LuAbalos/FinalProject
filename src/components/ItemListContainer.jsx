@@ -43,7 +43,3 @@ const ItemListContainer = () => {
 }
   
 export default ItemListContainer;
-
-// function onAdd (qty) {
-//   alert(`se agregó ' ' ${qty} productos`)
-// }

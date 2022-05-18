@@ -4,10 +4,9 @@ import { CartContext } from "./CartContext";
 const CartWidget= () => {
   const test = useContext(CartContext);
 
-    return (
-      <>
+  return (
+    <>
       <div className="circulo"> 
-      
         <p id="numeroCarrito">{test.calcItemsQty() >0 ?test.calcItemsQty() :null}</p>
       </div>
       <div className="divCarrito">
