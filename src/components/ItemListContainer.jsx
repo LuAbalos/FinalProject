@@ -12,7 +12,7 @@ const ItemListContainer = () => {
       .then(result => setDato(result))
       .catch(err => console.log(err));
   }, [idCategory]);
-
+console.log(dato);
   useEffect (() => {
     return (() => {
       setDato([]);
